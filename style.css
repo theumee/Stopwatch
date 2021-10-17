@@ -22,7 +22,7 @@ body {
     border: 1px solid rgb(110, 110, 110);
     width:450px;
     margin: 20px auto;
-
+    background: linear-gradient(rgba(17, 7, 7, 0.7),rgba(59, 44, 44, 0.6),rgba(53, 51, 51, 0.5));
 }
 h1{
     /* background-color: rgb(192, 133, 112); */
@@ -32,11 +32,9 @@ h1{
 }
 #output{
     font-size: 50px;
-}
-
-.timer{
     margin-top: 60px;
 }
+
   
 .buttons{
     margin:50px 0;
@@ -134,4 +132,14 @@ li:nth-child(even){
         margin: 0;
         border: 0;
     }
+    #output{
+        font-size: 70px;
+    }
+
+    .buttons button{
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+    
 }
