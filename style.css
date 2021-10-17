@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:  'Roboto Condensed', sans-serif;
+}
+
+body {
+    /* background: linear-gradient(to right, hsl(201, 11%, 41%), hsl(0, 0%, 81%)); */
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/5624978/pexels-photo-5624978.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  }
+
+
+.container{
+    border-radius: 20px;
+    border: 1px solid rgb(110, 110, 110);
+    width:450px;
+    margin: 20px auto;
+    background:linear-gradient(rgba(54, 54, 54, 0.747),rgba(90, 90, 90, 0.568), rgba(148, 148, 148, 0.377))
+}
+h1{
+    /* background-color: rgb(192, 133, 112); */
+    border-bottom: solid rgb(247, 226, 108,.5) 2px;
+    padding: 15px;
+    color:rgb(255, 255, 255);
+}
+#output{
+    font-size: 50px;
+}
+
+.timer{
+    margin-top: 60px;
+}
+  
+.buttons{
+    margin:50px 0;
+
+}
+
+.buttons button{
+    border: 2px solid dodgerblue ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 60px;;
+}
+
+
+.start{
+    background-color: rgb(131, 255, 120);
+}
+.stop{
+    background-color: rgb(255, 152, 152);
+}
+
+.lap{
+    background-color: rgb(52, 95, 236);
+}
+
+.reset{
+    background-color: rgb(247, 255, 131);
+}
+
+.start:hover{
+    background-color: rgb(60, 235, 25);
+}
+.stop:hover{
+    background-color: rgb(255, 124, 124);
+}
+
+.lap:hover{
+    background-color: rgb(107, 107, 245);
+}
+.reset:hover{
+    background-color: rgb(199, 212, 11);
+}
+
+.divider{
+    font-size: 30px;
+    border-bottom: dashed rgba(52, 59, 59, 0.733) 1px;
+    padding: 15px;
+
+    margin: 0 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+ul{
+ 
+    overflow-y:scroll;
+    max-height: 200px;
+    margin: 50px;
+}
+li{
+    list-style: none;
+    border-bottom:  5px solid rgb(15, 60, 119);
+    border-left: 5px solid rgb(15, 60, 119);
+    padding: 10px;
+    background-color: grey;
+    margin: 5px 30px 0 0 ;
+    border-radius: 20px;
+}
+li:nth-child(even){
+    background-color: rgb(151, 151, 151);
+}
