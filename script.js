@@ -87,12 +87,8 @@ function lapResetTimer(){
     }
     else{
         output.textContent = "00 : 00 : 00";
-        let laps = uL.children;
-        console.log(laps);
-        while(uL.children.length != 0){
-            for (let i of laps) {
-                uL.removeChild(i);
-            }
+        while(uL.firstChild){
+            uL.removeChild(uL.firstChild);
         }
    
     }
