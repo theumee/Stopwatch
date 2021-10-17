@@ -20,7 +20,6 @@ let interval = null;
 let timerStatus = false;
 
 
-
 function stopWatch(){
    
     milliSeconds++;
