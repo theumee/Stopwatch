@@ -22,7 +22,7 @@ body {
     border: 1px solid rgb(110, 110, 110);
     width:450px;
     margin: 20px auto;
-    background:linear-gradient(rgba(54, 54, 54, 0.747),rgba(90, 90, 90, 0.568), rgba(148, 148, 148, 0.377))
+
 }
 h1{
     /* background-color: rgb(192, 133, 112); */
@@ -124,4 +124,14 @@ li{
 }
 li:nth-child(even){
     background-color: rgb(151, 151, 151);
+}
+
+
+
+@media (max-width:600px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }
 }
