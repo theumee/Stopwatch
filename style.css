@@ -9,10 +9,11 @@
 body {
     /* background: linear-gradient(to right, hsl(201, 11%, 41%), hsl(0, 0%, 81%)); */
     text-align: center;
-    background-image: url("https://images.pexels.com/photos/5624978/pexels-photo-5624978.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-image: url("https://source.unsplash.com/collection/190727/1600x900");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size:cover;
+    height: 100vh;
   }
 
 
