@@ -85,7 +85,6 @@ function lapResetTimer(){
             uL.appendChild(lap);
     }
     else{
-        output.textContent = "00 : 00 : 00";
         while(uL.firstChild){
             uL.removeChild(uL.firstChild);
         }
