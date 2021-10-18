@@ -11,9 +11,11 @@ let milliSeconds = 0;
 let seconds = 0;
 let minutes = 0;
 
-let displatMS = 0;
+// function()
+
+let displayMS = 0;
 let displayS = 0;
-let displatM = 0;
+let displayM = 0;
 
 let interval = null;
 
@@ -34,10 +36,10 @@ function stopWatch(){
     }
 
     if(milliSeconds < 10){
-        displatMS = "0" + milliSeconds.toString();
+        displayMS = "0" + milliSeconds.toString();
     }
     else{
-        displatMS = milliSeconds;
+        displayMS = milliSeconds;
     }
 
     if(seconds < 10){
@@ -48,12 +50,12 @@ function stopWatch(){
     }
 
     if(minutes < 10){
-        displatM = "0" + minutes.toString();
+        displayM = "0" + minutes.toString();
     }
     else{
-        displatM = minutes;
+        displayM = minutes;
     }
-    document.getElementById("output").textContent = displatM + " : " + displayS + " : " + displatMS;
+    document.getElementById("output").textContent = displayM + " : " + displayS + " : " + displayMS;
 
 }
 
@@ -85,6 +87,11 @@ function lapResetTimer(){
             uL.appendChild(lap);
     }
     else{
+        window.clearInterval(interval);
+        milliSeconds = 0;
+        seconds = 0;
+        minutes = 0;
+        output.textContent = "00 : 00 : 00";
         while(uL.firstChild){
             uL.removeChild(uL.firstChild);
         }
