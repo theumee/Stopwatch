@@ -25,7 +25,7 @@ let timerStatus = false;
 function stopWatch(){
    
     milliSeconds++;
-    if(milliSeconds === 100){
+    if(milliSeconds === 1000){
         milliSeconds = 0;
         seconds++;
 
